@@ -18,17 +18,21 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "emotion-theming": "^11.0.0",
     "gatsby": "^5.3.3",
     "gatsby-plugin-emotion": "^8.3.0",
     "gatsby-plugin-image": "^3.3.2",
     "gatsby-plugin-sharp": "^5.3.2",
     "gatsby-plugin-sitemap": "^6.3.1",
     "gatsby-source-filesystem": "^5.3.1",
+    "gatsby-source-prismic": "^5.2.10",
     "gatsby-transformer-sharp": "^5.3.1",
+    "local-storage-fallback": "^4.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "dotenv": "^16.0.3",
     "gh-pages": "^4.0.0"
   }
 }

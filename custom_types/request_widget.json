@@ -1,0 +1,94 @@
+{
+  "Main" : {
+    "firstwidget" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading4",
+        "label" : "Первый виджет",
+        "placeholder" : "Первый виджет"
+      }
+    },
+    "firstcounter" : {
+      "type" : "Number",
+      "config" : {
+        "label" : "Первый счетчик",
+        "placeholder" : "000"
+      }
+    },
+    "secondwidget" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading4",
+        "label" : "Второй виджет",
+        "placeholder" : "Второй виджет"
+      }
+    },
+    "secondcounter" : {
+      "type" : "Number",
+      "config" : {
+        "label" : "Второй счетчик",
+        "placeholder" : "000"
+      }
+    },
+    "thirdwidget" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading4",
+        "label" : "Третий виджет",
+        "placeholder" : "Третий виджет"
+      }
+    },
+    "thirdcounter" : {
+      "type" : "Number",
+      "config" : {
+        "label" : "Третий счетчик",
+        "placeholder" : "000"
+      }
+    },
+    "fourthwidget" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading4",
+        "label" : "Четвертый виджет",
+        "placeholder" : "Четвертый виджет"
+      }
+    },
+    "fourthcounter" : {
+      "type" : "Number",
+      "config" : {
+        "label" : "Четвертый счетчик",
+        "placeholder" : "000"
+      }
+    },
+    "fifthwidget" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading4",
+        "label" : "Пятый виджет",
+        "placeholder" : "Пятый виджет"
+      }
+    },
+    "fifthcounter" : {
+      "type" : "Number",
+      "config" : {
+        "label" : "Пятый счетчик",
+        "placeholder" : "000"
+      }
+    },
+    "sixthwidget" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading4",
+        "label" : "Шестой виджет",
+        "placeholder" : "Шестой виджет"
+      }
+    },
+    "sixthcounter" : {
+      "type" : "Number",
+      "config" : {
+        "label" : "Шестой счетчик",
+        "placeholder" : "000"
+      }
+    }
+  }
+}

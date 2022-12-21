@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunksvs28=self.webpackChunksvs28||[]).push([[529],{1316:function(t,s,e){e.r(s),e.d(s,{Head:function(){return c}});var n=e(7294),u=e(5286),l=e(2998),a=e(917);s.default=()=>(0,a.tZ)(u.Z,null,(0,a.tZ)("div",{className:"row"},"Свободный"));const c=()=>(0,a.tZ)(n.Fragment,null,(0,a.tZ)(l.Z,{title:"Свободный"}))}}]);
+//# sourceMappingURL=component---src-pages-svobodny-jsx-6de71a91548383c2802a.js.map

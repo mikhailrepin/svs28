@@ -14,7 +14,7 @@ export const theme = {
     subheading: "#4E7BBB", // h3, h4
     caption: "#8B98A5", // accented text
     text: "#767B81", // main body text
-    shadow: "0px 5px 13px rgba(0, 0, 0, 0.04)", // main shadow style
+    shadow: "0 1px 1px hsl(0deg 0% 0% / 0.075),0 2px 2px hsl(0deg 0% 0% / 0.075),0 4px 4px hsl(0deg 0% 0% / 0.075),0 8px 8px hsl(0deg 0% 0% / 0.075),0 16px 16px hsl(0deg 0% 0% / 0.075)", // main shadow style light theme
     // toggle selector position
     toggleSelector: "0px",
   },
@@ -27,7 +27,7 @@ export const theme = {
     subheading: "#748FB5",
     caption: "#A1A6AB",
     text: "#DDDEDF",
-    shadow: "0px 5px 13px rgba(0, 0, 0, 0.2)",
+    shadow: "0 1px 1px hsl(0deg 0% 0% / 0.075),0 2px 2px hsl(0deg 0% 0% / 0.075),0 4px 4px hsl(0deg 0% 0% / 0.075),0 8px 8px hsl(0deg 0% 0% / 0.075),0 16px 16px hsl(0deg 0% 0% / 0.075)",
     // toggle selector position
     toggleSelector: "40px",
   }

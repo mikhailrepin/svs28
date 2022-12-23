@@ -22,7 +22,9 @@ const Layout = ({ pageTitle, children }) => {
     background: var(--front);
     border-bottom: 1px solid var(--border);
     z-index: 3;
+    box-shadow: var(--shadow-elevation-low);
   `;
+
   const Topbar = css`
     max-width: var(--main-width);
     margin: 0 auto;
@@ -32,6 +34,7 @@ const Layout = ({ pageTitle, children }) => {
     align-items: center;
     gap: 4px;
   `;
+
   const Projects = css`
     padding-right: 4px;
     display: flex;
@@ -46,11 +49,13 @@ const Layout = ({ pageTitle, children }) => {
       display: none;
     }
   `;
+
   const Nav = css`
     display: flex;
     align-items: center;
     gap: 4px;
   `;
+
   const NavButton = css`
     display: flex;
     justify-content: space-between;
@@ -78,6 +83,27 @@ const Layout = ({ pageTitle, children }) => {
     <main>
       <Global
         styles={css`
+          :root {
+            --shadow-color: ${state.isDark ? "0deg 0% 3%" : "0deg 0% 60%"};
+            --shadow-elevation-low:
+              0px 0.3px 0.3px hsl(var(--shadow-color) / 0.28),
+              0px 0.5px 0.6px -1.2px hsl(var(--shadow-color) / 0.28),
+              0.1px 1.1px 1.2px -2.5px hsl(var(--shadow-color) / 0.28);
+            --shadow-elevation-medium:
+              0px 0.3px 0.3px hsl(var(--shadow-color) / 0.3),
+              0px 0.9px 1px -0.8px hsl(var(--shadow-color) / 0.3),
+              0.1px 2.2px 2.5px -1.7px hsl(var(--shadow-color) / 0.3),
+              0.3px 5.4px 6.1px -2.5px hsl(var(--shadow-color) / 0.3);
+            --shadow-elevation-high:
+              0px 0.3px 0.3px hsl(var(--shadow-color) / 0.32),
+              0.1px 1.7px 1.9px -0.4px hsl(var(--shadow-color) / 0.32),
+              0.2px 3.2px 3.6px -0.8px hsl(var(--shadow-color) / 0.32),
+              0.3px 5.6px 6.3px -1.2px hsl(var(--shadow-color) / 0.32),
+              0.5px 9.5px 10.7px -1.7px hsl(var(--shadow-color) / 0.32),
+              0.8px 15.6px 17.6px -2.1px hsl(var(--shadow-color) / 0.32),
+              1.2px 24.5px 27.6px -2.5px hsl(var(--shadow-color) / 0.32);
+          }
+
           * {
             box-sizing: border-box;
             margin: 0;

@@ -22,7 +22,7 @@ const MainWidget = ({ Icon, Color, Count, Title }) => {
     background: var(--front);
     border: 1px solid var(--border);
     border-radius: 12px;
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-elevation-medium);
   `;
 
   const IconBox = styled.div`

@@ -20,7 +20,7 @@ const IndexPage = ({ data }) => {
   //const { state, /*dispatch*/ } = useContext(Context)
 
   const WidgetGrid = styled.div`
-    padding: 12px 16px;
+    padding: 32px 16px;
     display: flex;
     flex-wrap: nowrap;
     gap: 4px;

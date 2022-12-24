@@ -32,6 +32,7 @@ const IndexPage = ({ data }) => {
     green: "#8DAD33",
     default: "var(--accent-color)",
   };
+
   //const theme = useTheme()
   return (
     <Layout>

@@ -1,11 +1,14 @@
-import React, { useContext } from "react";
-import { css } from "@emotion/react";
-import styled from "@emotion/styled";
+import React, { useContext } from "react"
+import { css } from "@emotion/react"
+import styled from "@emotion/styled"
 //import { useTheme } from "@emotion/react";
-import Context from "../../store/context";
+import Context from "../../store/context"
 
 const MainWidget = ({ Icon, Color, Count, Title }) => {
   const { state } = useContext(Context);
+
+  const CountValue = new Intl.NumberFormat('ru-RU').format(Count);
+  console.log('Fromating = ' + CountValue);
 
   //const breakpoints = [420, 768, 992, 1200]; // breakpoints
   //const mq = breakpoints.map((bp) => `@media (max-width: ${bp}px)`);
@@ -47,7 +50,7 @@ const MainWidget = ({ Icon, Color, Count, Title }) => {
         gap: 8px;
       `}>
         <IconBox>{Icon}</IconBox>
-        <Counter>{Count}</Counter>
+        <Counter>{CountValue}</Counter>
       </div>
       <TitleBox>{Title}</TitleBox>
     </Wrapper>

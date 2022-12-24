@@ -3,12 +3,10 @@ import { css } from "@emotion/react"
 import styled from "@emotion/styled"
 //import { useTheme } from "@emotion/react";
 import Context from "../../store/context"
+import CountUp from 'react-countup'
 
 const MainWidget = ({ Icon, Color, Count, Title }) => {
   const { state } = useContext(Context);
-
-  const CountValue = new Intl.NumberFormat('ru-RU').format(Count);
-  console.log('Fromating = ' + CountValue);
 
   //const breakpoints = [420, 768, 992, 1200]; // breakpoints
   //const mq = breakpoints.map((bp) => `@media (max-width: ${bp}px)`);
@@ -50,7 +48,20 @@ const MainWidget = ({ Icon, Color, Count, Title }) => {
         gap: 8px;
       `}>
         <IconBox>{Icon}</IconBox>
-        <Counter>{CountValue}</Counter>
+        <Counter>
+          <CountUp
+            start={0}
+            end={Count}
+            duration={2.75}
+            separator=" "
+            //decimals={4}
+            decimal=""
+            prefix=""
+            suffix=""
+            onEnd={() => console.log('Finish count')}
+            onStart={() => console.log('Start count')}
+          />
+        </Counter>
       </div>
       <TitleBox>{Title}</TitleBox>
     </Wrapper>

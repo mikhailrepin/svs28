@@ -183,52 +183,18 @@ const Layout = ({ pageTitle, children }) => {
           }
         `}
       />
-      <div
-        css={css`
-          ${TopbarWrapper}
-        `}
-      >
-        <div
-          css={css`
-            ${Topbar}
-          `}
-        >
-          <div
-            css={css`
-              ${Nav}
-            `}
-          >
-            <div
-              css={css`
-                ${Projects}
-              `}
-            >
-              <CityIcon
-                height="16"
-                width="16"
-                fill="var(--heading)"
-              />
+      <div css={css`${TopbarWrapper}`}>
+        <div css={css`${Topbar}`}>
+          <div css={css`${Nav}`}>
+            <div css={css`${Projects}`}>
+              <CityIcon height="16" width="16" fill="var(--heading)"/>
               Проекты
             </div>
-            <Link
-              to="/"
-              css={css`
-                ${NavButton}
-              `}
-              activeClassName="active"
-            >
-              {" "}
-              Благовещенск{" "}
+            <Link to="/" css={css`${NavButton}`} activeClassName="active">
+              Благовещенск
             </Link>
-            <Link
-              to="/svobodny"
-              css={css`
-                ${NavButton}
-              `}
-              activeClassName="active"
-            >
-              {" "}
-              Свободный{" "}
+            <Link to="/svobodny" css={css`${NavButton}`} activeClassName="active">
+              Свободный
             </Link>
           </div>
           <Toggler />

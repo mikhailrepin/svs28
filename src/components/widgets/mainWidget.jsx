@@ -52,9 +52,10 @@ const MainWidget = ({ Icon, Color, Count, Title }) => {
           <CountUp
             start={0}
             end={Count}
+            //delay={0}
             duration={2.75}
             separator=" "
-            //decimals={4}
+            //decimals={2}
             decimal=""
             prefix=""
             suffix=""
